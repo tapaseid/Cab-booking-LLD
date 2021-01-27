@@ -1,0 +1,111 @@
+
+Run $ python main.py to start the app.
+
+You'll see the below options available -
+1: Book Cab
+2: Add Record
+3: Make driver offline
+4: History summary of customer
+5: Exit
+
+Choose any option and follow the instructions.
+
+There is a sample dataset to store in-memory and operate the app initially.
+Input format - di driver_given_rating ci custome_given_rating
+
+di -> ith driver
+ci -> ith customer
+As for example, [d1 4 c1 5] is a valid input.
+
+Booking criterion  - drivers rating should be >= customers rating.
+
+
+Here is the output while running the app - 
+
+$ python main.py
+Choose any one of the following:
+1: Book Cab
+2: Add Record
+3: Make driver offline
+4: History summary of customer
+5: Exit
+Enter a choice: 4
+Enter the name of the customer: c3
+{'name': 'c3', 'no_of_trips': 3, 'rating': 3.3333333333333335, 'blacklist': set()}
+--------------------------------------
+Choose any one of the following:
+1: Book Cab
+2: Add Record
+3: Make driver offline
+4: History summary of customer
+5: Exit
+Enter a choice: 1
+Enter the name of the customer: c3
+Average rating:  3.3333333333333335
+List of available drivers with rating:
+Name: d1, Rating: 3.6666666666666665
+Name: d2, Rating: 4.666666666666667
+Name: d3, Rating: 3.3333333333333335
+--------------------------------------
+Choose any one of the following:
+1: Book Cab
+2: Add Record
+3: Make driver offline
+4: History summary of customer
+5: Exit
+Enter a choice: 2
+Enter details: d1 5 c3  5
+--------------------------------------
+Choose any one of the following:
+1: Book Cab
+2: Add Record
+3: Make driver offline
+4: History summary of customer
+5: Exit
+Enter a choice: 4
+Enter the name of the customer: c3
+{'name': 'c3', 'no_of_trips': 4, 'rating': 3.75, 'blacklist': set()}
+--------------------------------------
+Choose any one of the following:
+1: Book Cab
+2: Add Record
+3: Make driver offline
+4: History summary of customer
+5: Exit
+Enter a choice: 1
+Enter the name of the customer: c3
+Average rating:  3.75
+List of available drivers with rating:
+Name: d1, Rating: 4.0
+Name: d2, Rating: 4.666666666666667
+--------------------------------------
+Choose any one of the following:
+1: Book Cab
+2: Add Record
+3: Make driver offline
+4: History summary of customer
+5: Exit
+Enter a choice: 3
+Enter driver name who has gone off line: d1
+--------------------------------------
+Choose any one of the following:
+1: Book Cab
+2: Add Record
+3: Make driver offline
+4: History summary of customer
+5: Exit
+Enter a choice: 1
+Enter the name of the customer: c3
+Average rating:  3.75
+List of available drivers with rating:
+Name: d2, Rating: 4.666666666666667
+--------------------------------------
+Choose any one of the following:
+1: Book Cab
+2: Add Record
+3: Make driver offline
+4: History summary of customer
+5: Exit
+Enter a choice: 5
+Shutting down the app.....
+$
